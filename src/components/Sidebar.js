@@ -14,6 +14,7 @@ const { SubMenu } = Menu;
 const Sidebar = (props) => {
     const bg1 = '#E0B000'
     const bg2 = '#151C2F'
+
     return (
         <Sider trigger={null} collapsible collapsed={props.collapsed} className='sideMenu' collapsedWidth='68px' width='332px' style={{ backgroundColor: props.collapsed ? bg1 : bg2 }}>
             <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} style={{ backgroundColor: props.collapsed ? bg1 : bg2 }}>
