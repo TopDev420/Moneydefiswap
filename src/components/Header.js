@@ -5,11 +5,7 @@ import { FaTimes } from "react-icons/fa";
 const Header = () => {
     const [worningTopic, setWorningTopic] = useState("PHISHING WARNING:");
     const [worningContent, setWorningContent] = useState("Please make sure you're visiting https://moneydefiswap.net/ - check the URL carefully.");
-    const clean = () => {
-        this.setState({
-            collapsed: !this.state.collapsed,
-        });
-    };
+
     console.log(worningTopic)
     return (
         <div className="header d-flex justify-content-center">
