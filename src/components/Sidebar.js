@@ -1,21 +1,26 @@
-import { Layout, Menu } from 'antd';
-import 'antd/dist/antd.css';
+import React from 'react';
+import "antd/dist/antd.css";
 import '../assets/css/sidebar.css'
-import { FaExchangeAlt, FaTractor, FaHome } from 'react-icons/fa'
+
+import { FaHome, FaTractor, FaExchangeAlt } from 'react-icons/fa'
 import Application from '../assets/img/application.svg'
 import Inflatable from '../assets/img/inflatable.svg'
+import Exchange from '../assets/img/exchange.svg'
 
+import { Layout, Menu } from "antd";
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
 const Sidebar = (props) => {
+    const bg1 = '#E0B000'
+    const bg2 = '#151C2F'
     return (
-        <Sider trigger={null} collapsible collapsed={props.collapsed} className='side-menu' collapsedWidth='68px' width='332px'>
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+        <Sider trigger={null} collapsible collapsed={props.collapsed} className='sideMenu' collapsedWidth='68px' width='332px' style={{ backgroundColor: props.collapsed ? bg1 : bg2 }}>
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} style={{ backgroundColor: props.collapsed ? bg1 : bg2 }}>
                 <Menu.Item key="1" icon={<FaHome />}>
                     Home
                 </Menu.Item>
-                <SubMenu key="sub1" icon={<FaExchangeAlt />} title="Trade/Exchange">
+                <SubMenu key="sub1" icon={<img src={Exchange} />} title="Trade/Exchange">
                     <Menu.Item key="2">Trade</Menu.Item>
                     <Menu.Item key="3">Liquidity</Menu.Item>
                 </SubMenu>

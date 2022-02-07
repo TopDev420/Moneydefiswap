@@ -7,8 +7,16 @@ import '../assets/css/common.css'
 
 import React, { Component } from "react";
 
-import { Layout, Menu, Breadcrumb } from 'antd';
-import 'antd/dist/antd.css';
+
+
+import "antd/dist/antd.css";
+import { Layout, Menu } from "antd";
+const { Sider } = Layout;
+const { SubMenu } = Menu;
+
+
+
+
 
 class Dashboard extends Component {
     state = {

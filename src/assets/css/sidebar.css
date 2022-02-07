@@ -1,25 +1,23 @@
-#components-layout-demo-custom-trigger .trigger {
-  padding: 0 24px;
-  font-size: 18px;
-  line-height: 64px;
-  cursor: pointer;
-  transition: color 0.3s;
+.ant-layout-sider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: -webkit-fill-available;
 }
 
-/* #components-layout-demo-custom-trigger .trigger:hover {
-  color: #1890ff;
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #151c2f;
 }
 
-#components-layout-demo-custom-trigger {
-  height: 32px;
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
+.ant-menu-item .ant-menu-item-icon {
+  min-width: 20px;
+  font-size: 20px;
 }
 
-.sidebar {
-  background-color: #fff;
+.ant-menu-vertical > .ant-menu-item,
+.ant-menu-inline > .ant-menu-item {
+  height: 68px;
+  margin: 0;
+  align-items: center;
+  line-height: 68px;
 }
-
-.side-menu {
-  height: auto; */
-/* } */

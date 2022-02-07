@@ -11,8 +11,6 @@ const Navbar = (props) => {
     return (
         <div className="navbar d-flex justify-content-*-between">
             <div className='nav-left d-flex'>
-                {/* <FaBars className='navbars align-self-center'>
-                </FaBars> */}
                 <div className=' align-self-center'>{React.createElement(props.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
                     style: { color: "white" },
                     className: 'trigger navbars align-self-center',
