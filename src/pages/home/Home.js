@@ -1,9 +1,8 @@
-import { Col } from "antd";
 import { Content } from "antd/lib/layout/layout";
-import Charactor1 from '../assets/img/y1.svg'
-import Hand from '../assets/img/hand.svg'
-import Money from '../assets/img/money.svg'
-import '../assets/css/home.css'
+import Charactor1 from '../../assets/img/y1.svg'
+import Hand from '../../assets/img/hand.svg'
+import Money from '../../assets/img/money.svg'
+import './home.css'
 
 const Home = () => {
     return (
@@ -17,8 +16,9 @@ const Home = () => {
                     <button className="btn-home-trade">TRADE NOW</button>
                 </div>
             </div>
-            <div className="second-article d-flex justify-content-start">
-                <div>
+            <div className="second-article d-flex justify-content-between">
+                <div className="col-sm-1" />
+                <div className="col-sm-10">
                     <p className="home-font1 second-article-topic">MoneyShow MoneyShow ($MYS)</p>
                     <p className="home-font3 second-article-content">is a new Defi utility deflationary token built on the Binance Smart Chain network. And it is the
                         governance token of MoneydefiSwap. The grand and detailed information of the token and the utility
