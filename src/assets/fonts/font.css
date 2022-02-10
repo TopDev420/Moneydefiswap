@@ -1,0 +1,26 @@
+.home-font1 {
+  font-family: Spicy Rice;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 80px;
+  color: #ffffff;
+}
+
+.home-font2 {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 63px;
+  color: #ffffff;
+}
+
+.home-font3 {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #e0b000;
+}

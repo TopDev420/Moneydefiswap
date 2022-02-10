@@ -8,12 +8,12 @@ const Header = () => {
     const [worningState, setWorningState] = useState(false);
 
     return (
-        <div className="header justify-content-center" style={{ display: worningState ? 'none' : 'flex' }}>
+        <div className={`header justify-content-center`} style={{ display: worningState ? 'none' : 'flex' }}>
             <div className="worning-url d-flex justify-content-center align-self-center">
                 <span className="worning-topic align-self-center">{worningTopic}</span>
                 <span className="worning-content align-self-center">{worningContent}</span>
             </div>
-            <FaTimes className='worning-cancel align-self-center' onClick={() => {
+            <FaTimes className='worning-cancel align-self-center pointer' onClick={() => {
                 setWorningState(true)
             }} />
         </div>

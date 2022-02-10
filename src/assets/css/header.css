@@ -12,16 +12,16 @@
 }
 .worning-topic {
   font: Roboto;
-  weight: 700;
-  style: normal;
+  font-weight: 700;
+  font-style: normal;
   size: 22px;
   line-height: 25.78px;
 }
 
 .worning-content {
   font: Roboto;
-  weight: 300;
-  style: normal;
+  font-weight: 300;
+  font-style: normal;
   size: 18px;
   line-height: 21.09px;
 }

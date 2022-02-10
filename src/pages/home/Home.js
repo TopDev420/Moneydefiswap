@@ -1,19 +1,17 @@
-import { Content } from "antd/lib/layout/layout";
-import Charactor1 from '../../assets/img/y1.svg'
 import Hand from '../../assets/img/hand.svg'
 import Money from '../../assets/img/money.svg'
 import './home.css'
 
 const Home = () => {
     return (
-        <Content className="home">
+        <div className="home">
             <div className="first-article d-flex justify-content-around">
-                <div className="d-flex justify-content-end col-7"><img src={Charactor1}></img></div>
+                <div className="d-flex justify-content-end col-7"><div className='col-9' /><div className='col-1' /></div>
                 <div className="col-5">
                     <p className="home-font1 first-article-topic">MoneyDefiSwap</p>
                     <p className="home-font2 first-article-explain">Together to the future with MoneydefiSwap $MSD> </p>
                     <p className="home-font3 first-article-content">$MSD also aims to bring businesses and developers together to solve real-world problems with the shared values of transparency, fee-less transaction, social and economic inclusion, environmental sustainability.</p>
-                    <button className="btn-home-trade">TRADE NOW</button>
+                    <button className="btn-home-trade pointer">TRADE NOW</button>
                 </div>
             </div>
             <div className="second-article d-flex justify-content-between">
@@ -46,7 +44,7 @@ const Home = () => {
                         executed.</p>
                 </div>
             </div>
-        </Content>
+        </div>
     )
 }
 

@@ -52,24 +52,22 @@ const Sidebar = (props) => {
                     </Menu>
                     <div className="justify-content-around others" style={{ display: props.collapsed ? 'none' : 'flex' }}>
                         <div className="d-flex">
-                            <div class="toggleWrapper">
-                                <label class="switch">
-                                    <input type="checkbox" />
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
-                            <div><FaRegSun className="other-connect-icon" /></div>
+                            <label className="switch" >
+                                <input type="checkbox" onClick={props.theme} />
+                                <span className="slider round"></span>
+                            </label>
+                            <div><FaRegSun className="other-connect-icon pointer" /></div>
                         </div>
                         <div className="d-flex other-connect">
-                            <a><FaFacebook className="other-connect-icon" /></a>
-                            <a><FaInstagramSquare className="other-connect-icon" /></a>
-                            <a><FaPinterest className="other-connect-icon" /></a>
-                            <a><FaYoutubeSquare className="other-connect-icon" /></a>
+                            <a><FaFacebook className="other-connect-icon pointer" /></a>
+                            <a><FaInstagramSquare className="other-connect-icon pointer" /></a>
+                            <a><FaPinterest className="other-connect-icon pointer" /></a>
+                            <a><FaYoutubeSquare className="other-connect-icon pointer" /></a>
                         </div>
                     </div>
                 </SidebarContent>
             </ProSidebar>
-        </div>
+        </div >
     )
 }
 
