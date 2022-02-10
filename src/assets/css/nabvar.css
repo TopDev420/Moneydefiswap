@@ -1,6 +1,5 @@
 .navbar {
   height: 68px;
-  background: #151c2f;
 }
 
 .menu {
@@ -9,16 +8,14 @@
   color: #fff;
 }
 
-.mark {
-  background-image: url(../img/mark.svg);
-  background-color: #151c2f;
+.nav-mark {
   width: 54px;
   height: 51px;
   margin-left: 37px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
-.mark-name {
-  color: #fff;
+.nav-mark-name {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -48,7 +45,6 @@
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  color: #ffffff;
   margin-right: 5px;
 }
 
@@ -58,7 +54,6 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 25.78px;
-  color: #ffffff;
 }
 
 .balance-e {
@@ -67,7 +62,6 @@
   font-weight: 300;
   font-size: 22px;
   line-height: 25.78px;
-  color: #ffffff;
   margin-right: 17px;
 }
 
@@ -75,7 +69,6 @@
   width: 192px;
   height: 36px;
   display: flex;
-  background: #e0b000;
   border-radius: 30px;
   font-family: Roboto;
   font-style: normal;

@@ -22,26 +22,27 @@ import '../assets/css/sidebar.css'
 const Sidebar = (props) => {
     const bg1 = '#E0B000'
     const bg2 = '#151C2F'
+    const bg3 = '#FFF4CA'
 
     return (
         <div id="sidbar">
             <ProSidebar collapsed={props.collapsed}>
-                <SidebarContent style={{ backgroundColor: props.collapsed ? bg1 : bg2 }}>
-                    <Menu iconShape="square">
+                <SidebarContent style={props.theme ? { backgroundColor: props.collapsed ? bg1 : bg2 } : { backgroundColor: bg3 }}>
+                    <Menu iconShape="square" style={{ backgroundColor: props.collapsed ? bg1 : props.theme ? bg2 : bg3 }}>
                         <MenuItem active={true} icon={<BiHome />}>
                             Home
                         </MenuItem>
-                        <SubMenu icon={<FaExchangeAlt />} title='Trade/Exchange'>
+                        <SubMenu icon={<FaExchangeAlt />} title='Trade/Exchange' style={{ color: props.theme ? 'white' : 'black !important' }}>
                             <MenuItem>Trade</MenuItem>
                             <MenuItem>Liquidity</MenuItem>
                         </SubMenu>
-                        <MenuItem icon={<FaTractor />}>
+                        <MenuItem icon={<FaTractor />} style={{ color: props.theme ? 'white' : 'black' }}>
                             Farm
                         </MenuItem>
-                        <MenuItem icon={<img src={Inflatable} />}>
+                        <MenuItem icon={<img src={Inflatable} />} style={{ color: props.theme ? 'white' : 'black' }}>
                             Pool
                         </MenuItem>
-                        <SubMenu icon={<BiCategory />} title='More'>
+                        <SubMenu icon={<BiCategory />} title='More' style={{ color: props.theme ? 'white' : 'black' }}>
                             <MenuItem>Moneydefi Website</MenuItem>
                             <MenuItem>Poocoin Chart</MenuItem>
                             <MenuItem>Token Contract Address</MenuItem>
@@ -53,7 +54,7 @@ const Sidebar = (props) => {
                     <div className="justify-content-around others" style={{ display: props.collapsed ? 'none' : 'flex' }}>
                         <div className="d-flex">
                             <label className="switch" >
-                                <input type="checkbox" onClick={props.theme} />
+                                <input type="checkbox" onClick={props.themeToggle} />
                                 <span className="slider round"></span>
                             </label>
                             <div><FaRegSun className="other-connect-icon pointer" /></div>

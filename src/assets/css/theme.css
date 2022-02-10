@@ -1,7 +1,145 @@
+/** header*/
 .dark-header {
   background-color: #273252;
 }
 
 .light-header {
   background-color: #e0b000;
+}
+
+/** navbar*/
+
+.dark-navbar {
+  background-color: #151c2f;
+}
+
+.light-navbar {
+  background-color: #fff4ca;
+}
+
+.dark-mark {
+  background-image: url(../img/mark.svg);
+  background-color: #151c2f;
+}
+
+.light-mark {
+  background-image: url(../img/markLight.svg);
+  background-color: #fff4ca;
+}
+
+.dark-mark-name {
+  color: #fff;
+}
+
+.light-mark-name {
+  color: #151c2f;
+}
+
+.dark-bal {
+  color: #fff;
+}
+
+.light-bal {
+  color: #273252;
+}
+
+.dark-wallet {
+  background: #e0b000;
+}
+
+.light-wallet {
+  background: #273252;
+}
+
+/** footer */
+.dark-footer {
+  background-color: #151c2f;
+}
+
+.dark-footer {
+  background-color: #151c2f;
+}
+
+.light-footer {
+  background-color: #e0b000;
+}
+
+.light-footer-font {
+  color: #273252 !important;
+  color: #273252;
+}
+
+.light-footer-address {
+  border-color: #273252 !important;
+  color: #273252 !important;
+}
+
+.light-footer-address:active,
+.light-footer-address:focus,
+.light-footer-address::placeholder {
+  border-color: #273252 !important;
+  color: #273252 !important;
+}
+
+.dark-footer-subscribe {
+  background-color: #e0b000;
+  color: black;
+}
+
+.light-footer-subscribe {
+  background-color: #151c2f;
+  color: #e0b000;
+}
+
+.dark-footer-copy {
+  background: #e0b000;
+}
+
+.light-footer-copy {
+  background: #151c2f;
+}
+
+/** home page*/
+.dark-home-page {
+  background-color: #151c2f;
+}
+.light-home-page {
+  background-color: #fff4ca;
+}
+
+.dark-home-avatar {
+  background-image: url(../../assets/img/avatar-yl.png);
+}
+.light-home-avatar {
+  background-image: url(../../assets/img/avatar-bl.png);
+}
+
+.dark-home-topic {
+  color: #fff;
+}
+.light-home-topic {
+  color: #001f65;
+}
+
+.dark-home-explain {
+  color: #fff;
+}
+.light-home-explain {
+  color: #151c2f;
+}
+
+.dark-home-content {
+  color: #e0b000;
+}
+.light-home-content {
+  color: #151c2f;
+}
+
+.dark-home-trade {
+  background: #e0b000;
+  color: #000000;
+}
+.light-home-trade {
+  background: #001f66;
+  color: #e0b000;
 }

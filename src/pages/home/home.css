@@ -6,7 +6,6 @@
   margin-top: 75px;
   /* width: 771px; */
   height: 600px;
-  background-image: url(../../assets/img/avatar-yl.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -29,7 +28,6 @@
   margin-top: 15px;
   width: 238px;
   height: 58px;
-  background: #e0b000;
   border-radius: 12px;
   border: none;
   font-family: Roboto;
@@ -37,7 +35,6 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
 }
 
 .second-article {
