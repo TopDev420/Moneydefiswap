@@ -149,6 +149,7 @@
 }
 
 .switch input {
+  position: relative;
   opacity: 0;
   width: 0;
   height: 0;
@@ -198,4 +199,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 12px;
+}
+.switch-img {
+  position: absolute;
+  background-image: url(../img/light.svg);
+  width: 58px;
+  height: 25px;
+  top: 0;
+  left: 0px;
 }

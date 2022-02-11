@@ -56,6 +56,7 @@ const Sidebar = (props) => {
                             <label className="switch" >
                                 <input type="checkbox" onClick={props.themeToggle} />
                                 <span className="slider round"></span>
+                                <div className="switch-img"></div>
                             </label>
                             <div><FaRegSun className="other-connect-icon pointer" /></div>
                         </div>
